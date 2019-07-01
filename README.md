@@ -35,7 +35,7 @@ and append it to a particular file according to the first value.
 
 ```sh
 mkdir -p data/by_type
-gawk -F, '{print >> "data/by_type/"$1".csv"}' data/data/*.csv
+gawk -F, '{print >> "data/by_type/"$1".csv"}' data/*.csv
 ```
 
 ## Loading into PostgreSQL
